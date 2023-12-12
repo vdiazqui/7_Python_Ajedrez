@@ -56,6 +56,13 @@ def main():
     while True:
         # Imprimir el número del turno
         print(f"Turno {turno}")
+
+        # Preguntar al usuario si quiere hacer un movimiento
+        opcion = input("¿Quieres hacer un movimiento? (s/n): ")
+
+        # Salir del bucle si la respuesta no es 's'
+        if opcion.lower() != 's':
+            break
         
         # Solicitar información sobre el movimiento al usuario
         fila_origen = int(input("Fila de la pieza que quieres mover: "))
